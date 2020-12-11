@@ -39,7 +39,24 @@ namespace Week13
             {
                 labelUbah.Text = Inputdata.Text;
             }
-        
+            if(labelUbah.Text != "[EMPTY]" && Inputdata.Text== "DELETE")
+            {
+                labelUbah.Text = "[EMPTY]";
+                labelUbah.ForeColor = Color.Black;
+
+            }
+            if (labelUbah.Text != "[EMPTY]")
+            { 
+                if (Inputdata.Text == "SHOWN")
+                {
+                    labelUbah.Visible = true;
+                }
+                if (Inputdata.Text == "HIDE")
+                {
+                    labelUbah.Visible = false;
+                }
+                    }
+
         }
 
         private void ulr_isi_Click(object sender, EventArgs e)
